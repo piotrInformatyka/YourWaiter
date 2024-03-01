@@ -1,0 +1,47 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# production
+build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+bin
+obj
+.vs
+logs
+wwwroot
+*.zip
+*.pfx
+CodeMaid.config
+
+.idea
+/front/src/api/config.ts
+grafana_storage
+/backend/src/ProfiBiznes.sln.DotSettings.user
+dist
+Internal
+tools/prometheus/data
+tools/prometheus/log
+tools/rabbitmq/data
+/backend/src/Gateway/XGateway/ocelot.Development.json
+/backend/src/Files/Files.API/files
+/backend/src/Files/Files.API/files/*
+publish
+/backend/src/migration_script.sql
