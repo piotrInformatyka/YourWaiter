@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using System.Reflection;
+using MediatR;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Shared.Abstractions.Modules;
 
@@ -12,6 +14,7 @@ public class OrderingModule : IModule
 
     public void Register(IServiceCollection services)
     {
+        services.AddMediatR(Assembly.GetExecutingAssembly());
     }
 
     public void Use(IApplicationBuilder app)
