@@ -1,7 +1,6 @@
-﻿using System.Reflection;
-using MediatR;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Ordering.Application;
 using Shared.Abstractions.Modules;
 
 namespace Ordering.API;
@@ -14,7 +13,7 @@ public class OrderingModule : IModule
 
     public void Register(IServiceCollection services)
     {
-        services.AddMediatR(Assembly.GetExecutingAssembly());
+        services.AddApplication();
     }
 
     public void Use(IApplicationBuilder app)

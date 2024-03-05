@@ -1,4 +1,6 @@
+using System.Reflection;
 using Bootstrapper;
+using MediatR;
 using Shared.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
